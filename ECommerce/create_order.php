@@ -9,8 +9,8 @@ ini_set('display_errors', 1);
 header('Content-Type: application/json'); // ✅ Ensure JSON response
 
 // ✅ Razorpay API credentials (Use your actual secret key)
-$keyId = "rzp_test_cF1Zbsgks1AQbM";
-$keySecret = "69P7e7S4GZJeWKl8NDos3nxU";
+$keyId = "";
+$keySecret = "";
 
 // ✅ Get amount & order ID from frontend
 $data = json_decode(file_get_contents("php://input"), true);

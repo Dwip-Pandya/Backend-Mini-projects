@@ -326,7 +326,7 @@ $connect->close();
                     }
 
                     const options = {
-                        "key": "rzp_test_cF1Zbsgks1AQbM",
+                        "key": "your key",
                         "amount": order.amount,
                         "currency": "INR",
                         "name": "QuickKart",

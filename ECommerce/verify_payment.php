@@ -4,8 +4,8 @@ require('vendor/autoload.php'); // Razorpay SDK
 use Razorpay\Api\Api;
 
 // ✅ Razorpay API Credentials
-$keyId = "rzp_test_cF1Zbsgks1AQbM";
-$keySecret = "69P7e7S4GZJeWKl8NDos3nxU"; // 🔹 Add your Test Secret Key
+$keyId = "";
+$keySecret = ""; // 🔹 Add your Test Secret Key
 
 // ✅ Get JSON data from Razorpay response
 $data = json_decode(file_get_contents("php://input"), true);

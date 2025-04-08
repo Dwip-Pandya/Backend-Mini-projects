@@ -1,0 +1,184 @@
+.thank-you-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  
+  .thank-you-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(26, 54, 93, 0.15);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  /* Checkmark Animation */
+  .checkmark-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #1a365d;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+  }
+  
+  .checkmark-icon {
+    color: #ffffff;
+    font-size: 2rem;
+    animation: scale 0.5s ease-in-out;
+  }
+  
+  /* Hero Section */
+  .hero-section1 {
+    margin-bottom: 2rem;
+  }
+  
+  .thank-you-title {
+    color: #1a365d;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .thank-you-message {
+    color: #5a6a80;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    background-color: #e8edf5;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .order-summary h2 {
+    color: #1a365d;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(26, 54, 93, 0.1);
+  }
+  
+  .summary-item:last-child {
+    border-bottom: none;
+  }
+  
+  .summary-label {
+    font-weight: 600;
+    color: #1a365d;
+  }
+  
+  .summary-value {
+    color: #5a6a80;
+  }
+  
+  /* CTA Buttons */
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #1a365d;
+    border-color: #1a365d;
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2a4a7f;
+    border-color: #2a4a7f;
+    transform: translateY(-2px);
+  }
+  
+  .btn-outline-primary {
+    color: #1a365d;
+    border-color: #1a365d;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #1a365d;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+  
+  /* Animations */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(26, 54, 93, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(26, 54, 93, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(26, 54, 93, 0);
+    }
+  }
+  
+  @keyframes scale {
+    0% {
+      transform: scale(0);
+    }
+    80% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .thank-you-card {
+      padding: 2rem 1.5rem;
+    }
+    
+    .thank-you-title {
+      font-size: 2rem;
+    }
+    
+    .thank-you-message {
+      max-width: 100%;
+      font-size: 1rem;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    .btn {
+      width: 100%;
+    }
+  }

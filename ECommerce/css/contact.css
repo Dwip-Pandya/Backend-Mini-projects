@@ -1,0 +1,178 @@
+/* contact us */
+
+/* Main Colors */
+:root {
+    --primary-color: #1a365d;
+    /* Primary blue color */
+    --primary-dark: #3a56b2;
+    /* Darker blue for hover effects */
+    --secondary-color: #1cc88a;
+    /* Secondary green color */
+    --secondary-dark: #169e6c;
+    /* Darker green for hover effects */
+    --text-primary: #333333;
+    /* Primary text color */
+    --text-secondary: #6c757d;
+    /* Secondary text color */
+    --bg-light: #f8f9fc;
+    /* Light background color */
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Card shadow */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--bg-light);
+}
+
+/* Section Styles */
+.contact-section {
+    background-color: var(--bg-light);
+    padding: 50px 0;
+}
+
+/* Card Styles */
+.contact-info-card,
+.contact-form-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 30px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info-card:hover,
+.contact-form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Info Styles */
+.contact-details h4,
+.business-hours h4,
+.social-media h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 8px;
+}
+
+.contact-item,
+.hour-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.contact-item i,
+.hour-item i {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+.contact-item span,
+.hour-item span {
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+
+/* Form Styles */
+.form-label {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #e1e5eb;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.15);
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Map Container */
+.map-container {
+    margin-top: 60px;
+}
+
+.map-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+/* Success Message */
+.success-message {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+
+    .contact-info-card,
+    .contact-form-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .social-icons {
+        justify-content: center;
+    }
+
+    .contact-section {
+        padding: 30px 0;
+    }
+
+    .contact-info-card,
+    .contact-form-card {
+        padding: 20px;
+    }
+}
+
+/* Headings */
+h2,
+h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+h2 {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}

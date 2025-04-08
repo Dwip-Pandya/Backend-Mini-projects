@@ -1,0 +1,163 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Header Styles */
+h2 {
+    color: #1a365d;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1a365d;
+}
+
+/* Order Information Styles */
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+strong {
+    color: #1a365d;
+    font-weight: bold;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+}
+
+thead {
+    background-color: #1a365d;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+tbody tr:hover {
+    background-color: rgba(26, 54, 93, 0.05);
+}
+
+tbody tr:last-child td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Footer Row Styling */
+tfoot tr {
+    background-color: #f5f5f5;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+tfoot td:last-child {
+    color: #1a365d;
+}
+
+/* Links Styling */
+a {
+    display: inline-block;
+    color: #1a365d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border: 1px solid #1a365d;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+a:hover {
+    background-color: #1a365d;
+    color: white;
+}
+
+/* Price Column Alignment */
+td:nth-child(3), 
+td:nth-child(4),
+th:nth-child(3),
+th:nth-child(4) {
+    text-align: right;
+}
+
+/* Quantity Column Alignment */
+td:nth-child(2),
+th:nth-child(2) {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        border: 0;
+    }
+    
+    table thead {
+        display: none;
+    }
+    
+    table tr {
+        margin-bottom: 15px;
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 0.9em;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+        color: #1a365d;
+    }
+    
+    table td:last-child {
+        border-bottom: 0;
+    }
+    
+    tfoot td {
+        text-align: right !important;
+        padding-left: 15px !important;
+    }
+    
+    tfoot td:before {
+        content: none !important;
+    }
+}

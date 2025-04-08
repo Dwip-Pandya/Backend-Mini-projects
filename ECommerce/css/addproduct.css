@@ -1,0 +1,154 @@
+/* addproduct.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f8fa;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #1a365d;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 3px solid #1a365d;
+    width: 80%;
+    max-width: 500px;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1a365d;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #1a365d;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #1a365d;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #142c4e;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    form {
+        padding: 40px;
+    }
+    
+    .form-row {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .form-col {
+        flex: 1;
+    }
+}
+
+/* Additional styling for file inputs */
+input[type="file"] {
+    background-color: #f5f8fa;
+    border: 1px dashed #1a365d;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #1a365d;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Alert message styling */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

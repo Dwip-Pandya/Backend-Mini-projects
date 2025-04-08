@@ -1,0 +1,94 @@
+/* CSS for Add Product Page */
+.form {
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-header {
+    border-bottom: 1px solid #eee;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+}
+
+.action-buttons .btn {
+    padding: 10px 24px;
+    font-weight: 500;
+}
+
+/* Image upload styling */
+.image-upload-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.image-preview {
+    width: 100%;
+    height: 150px;
+    border: 2px dashed #ced4da;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.image-preview:hover {
+    border-color: #0d6efd;
+    background-color: #f1f8ff;
+}
+
+.upload-icon {
+    font-size: 2rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.image-preview.has-image {
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-preview.has-image .upload-icon,
+.image-preview.has-image p {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Form styling */
+.form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    border-color: #86b7fe;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .col-lg-8, .col-lg-4 {
+        width: 100%;
+    }
+}
